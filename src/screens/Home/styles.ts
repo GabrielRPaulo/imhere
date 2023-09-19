@@ -17,12 +17,33 @@ export const styles = StyleSheet.create({
       fontSize:16
     },
     input: {
+        flex: 1,
         height: 56,
         backgroundColor: "#1F1E25",
         color: '#FFFFFF',
-        borderRadius: 9,
-        marginTop: 20 ,
+        borderRadius: 5,
         padding: 10,
         fontSize: 15,
+        marginRight: 12,
+    },
+    buttonText: {
+      color: '#FFF',
+      padding: 10,
+      fontSize: 24
+      
+    },
+    button: {
+      width: 56, 
+      height: 56,
+      borderRadius: 5,
+      backgroundColor: '#31CF67',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    form: {
+      width: '100%',
+      flexDirection: 'row',     
+      marginTop: 20 ,
+      marginBottom: 42,
     }
 });
