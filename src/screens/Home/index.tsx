@@ -18,10 +18,12 @@ export function Home(){
   } 
 
   function handleParticipantRemove (name: string){
+    
     Alert.alert("Remover",`Deseja remover o participante "${name}" da lista ??`, [
       {
         text: 'Sim',
-        onPress: () => Alert.alert('Deletado!')
+        onPress: () => setParticipants(prevState => prevState.filter(participant => participant !== name))
+
       },
       {
         text: 'Não',
@@ -36,7 +38,7 @@ export function Home(){
   <View style={styles.container}>
 
     <Text style={styles.eventName}>
-      Evento
+      Nome do Evento
     </Text>
 
     <Text style={styles.eventDate}>
